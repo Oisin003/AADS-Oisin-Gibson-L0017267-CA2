@@ -210,14 +210,31 @@ The `main()` method demonstrates:
 - Duplicate prevention ensures data integrity
 - Comprehensive print statements help visualize operations
 
-## Learning Outcomes
+## LRU Cache Implementation
 
-This assignment demonstrates understanding of:
-- Hash table implementation from scratch
-- Collision resolution strategies
-- Dynamic resizing and rehashing
-- Divide and conquer algorithm design
-- Time and space complexity analysis
-- Java programming best practices
+### Overview
+Implements a **Least Recently Used (LRU) Cache** using a hash table combined with a doubly linked list for efficient O(1) operations.
+
+### Features (Question 4)
+- **Capacity:** 20 elements (Question 4.1)
+- **Data Structures:**
+  - HashMap for O(1) key lookup (Question 4.1.2)
+  - Doubly linked list to maintain access order (Question 4.1.1)
+  
+### Operations
+- **Insert (put):** Add key-value pairs to cache (Question 4.3.1)
+- **Search (get):** Find a key and mark as most recently used (Question 4.3.2)
+- **Delete (remove):** Remove nodes from linked list (Question 4.3.3)
+- **Eviction:** Automatically removes LRU item when capacity is exceeded (Question 4.3.4, 4.2)
+
+### How It Works
+- Most recently used items are at the **front** (after head)
+- Least recently used items are at the **back** (before tail)
+- When cache is full, the LRU item (before tail) is evicted
+- Every access moves the item to the front
+
+### Reference
+Based on standard LRU Cache design pattern from GeeksforGeeks using HashMap + Doubly Linked List.
 
 ---
+
