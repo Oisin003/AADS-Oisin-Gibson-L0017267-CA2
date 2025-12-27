@@ -2,14 +2,11 @@
 
 **Author:** Oisin Gibson (L00172671)  
 **Module:** Advanced Algorithms and Data Structures  
-**Professor:** Ruth Lennon  
+**Instructor:** Ruth Lennon  
 **Date:** 22/12/2025
 
-## Overview
 
-This project implements a **Hash Table using Divide and Conquer strategy** for collision resolution, resizing, and rehashing. The implementation demonstrates key data structure concepts including open addressing, linear probing, and efficient rehashing techniques.
-
-## Assignment Requirements Implemented
+## Divide and Conquer  
 
 ### 3.1 Hash Table with Open Addressing
 - Implements **linear probing** for collision resolution
@@ -82,17 +79,6 @@ Load Factor = (Number of Elements) / (Table Capacity)
 
 ### Prerequisites
 - Java 17 or higher
-- Command line or IDE (IntelliJ, Eclipse, VS Code)
-
-### Compilation
-```bash
-javac HashTableDivideAndConquer.java
-```
-
-### Execution
-```bash
-java HashTableDivideAndConquer
-```
 
 ### Expected Output
 The program will:
@@ -102,29 +88,6 @@ The program will:
 4. Delete some entries
 5. Display updated table
 6. Show load factor and capacity information
-
-## Example Output
-
-```
-===== Hash Table Demo - Superheroes =====
-
-Inserted: Spider-Man
-Inserted: Batman
-...
-Key 'Batman' already exists in the table.
-
-Resizing table from 20 to 40
-Resizing complete.
-
-===== Hash Table Contents =====
-Capacity: 40, Size: 19
-Load Factor: 47.50%
--------------------------------
-Index 3: Superman
-Index 7: Spider-Man
-...
-==============================
-```
 
 ## Test Cases Included
 
@@ -198,9 +161,6 @@ The `main()` method demonstrates:
    https://www.w3schools.com/java/java_hashmap.asp
    - Java hash table basics and methods
 
-5. **Oracle Java Documentation - hashCode()**  
-   https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#hashCode--
-   - Official documentation for Java's hashCode() method
 
 ## Additional Notes
 
@@ -210,7 +170,7 @@ The `main()` method demonstrates:
 - Duplicate prevention ensures data integrity
 - Comprehensive print statements help visualize operations
 
-## LRU Cache Implementation
+===================================================================================================================================## LRU Cache Implementation
 
 ### Overview
 Implements a **Least Recently Used (LRU) Cache** using a hash table combined with a doubly linked list for efficient O(1) operations.
@@ -232,9 +192,6 @@ Implements a **Least Recently Used (LRU) Cache** using a hash table combined wit
 - Least recently used items are at the **back** (before tail)
 - When cache is full, the LRU item (before tail) is evicted
 - Every access moves the item to the front
-
-### Reference
-Based on standard LRU Cache design pattern from GeeksforGeeks using HashMap + Doubly Linked List.
 
 ---
 

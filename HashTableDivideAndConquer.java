@@ -6,7 +6,7 @@
  *
  * Assignment/Project: Assignment Name
  * Module: Advanced Algorithms and Data Structures
- * Professor/Instructor: Ruth Lennon
+ * Instructor: Ruth Lennon
  * Description: Implementation of a Hash Table using Divide and Conquer strategy for resizing and rehashing.
  *
  * Java Version: Java 17

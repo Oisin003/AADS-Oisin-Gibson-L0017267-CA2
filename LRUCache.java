@@ -2,18 +2,26 @@
 /**
  * Author: Oisin Gibson (L00172671)
  * Date: 25/12/2025
- * Last Modified: 25/12/2025
+ * Last Modified: 27/12/2025
  *
  * Assignment/Project: Advanced Algorithms and Data Structures  Assignment 2
  * Module: Advanced Algorithms and Data Structures
- * Professor/Instructor: Ruth Lennon
+ * Instructor: Ruth Lennon
  *
  * Description: Implementation of an LRU (Least Recently Used) Cache
+ *              using HashMap and Doubly Linked List for O(1) operations
  *
  * Java Version: Java 17
  *
+ * References:
+ * - GeeksforGeeks: LRU Cache - Complete Tutorial
+ *   https://www.geeksforgeeks.org/lru-cache-implementation/
+ * - GeeksforGeeks: Design a Data Structure for LRU Cache
+ *   https://www.geeksforgeeks.org/design-a-data-structure-for-lru-cache/
+ *
  * Modification History:
  * 25/12/2025 - Initial creation
+ * 27/12/2025 - Added references
  *
  */
 import java.util.HashMap;
