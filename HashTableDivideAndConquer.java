@@ -213,23 +213,23 @@ public class HashTableDivideAndConquer {
     // Print the hash table for debugging
     // Displays all non-null entries with their index positions
     public void printTable() {
-        System.out.println("\n===== Hash Table Contents =====");
+        System.out.println("\n====== Hash Table Contents ======");
         System.out.println("Capacity: " + capacity + ", Size: " + size);
         System.out.println("Load Factor: " + String.format("%.2f%%", (double) size / capacity * 100));
-        System.out.println("-------------------------------");
+        System.out.println("============================================================================");
 
         for (int i = 0; i < capacity; i++) {
             if (table[i] != null && !table[i].equals("DELETED")) {
                 System.out.println("Index " + i + ": " + table[i]);
             }
         }
-        System.out.println("==============================\n");
+        System.out.println("============================================================================\n");
     }
 
     public static void main(String[] args) {
         HashTableDivideAndConquer superheroTable = new HashTableDivideAndConquer(20);
 
-        System.out.println("===== Hash Table Demo - Superheroes =====");
+        System.out.println("====== Hash Table ======");
         System.out.println();
 
         // Insert keys - 20 Superheroes
@@ -258,19 +258,19 @@ public class HashTableDivideAndConquer {
         superheroTable.printTable();
 
         // Search for keys
-        System.out.println("\n===== Search Operations =====");
+        System.out.println("\n====== Search Functions   ======");
         System.out.println("Is 'Superman' in the table? " + superheroTable.search("Superman")); // true
         System.out.println("Is 'Cyclops' in the table? " + superheroTable.search("Cyclops")); // false
         System.out.println("Is 'Black Widow' in the table? " + superheroTable.search("Black Widow")); // true
 
         // Delete keys
-        System.out.println("\n===== Delete Operations =====");
+        System.out.println("\n===== Delete functions =====");
         superheroTable.delete("Wonder Woman");
         superheroTable.delete("Hawkeye");
         superheroTable.printTable();
 
         // Verify deletion
-        System.out.println("\n===== Verify Deletion =====");
+        System.out.println("\n====== Confirm Deletion ======");
         System.out.println("Is 'Wonder Woman' still in table? " + superheroTable.search("Wonder Woman")); // false
     }
 }

@@ -139,44 +139,44 @@ class LRUCache {
         // Question 4.1: Create a hash table with 20 values
         LRUCache lruCache = new LRUCache(20);  // Cache capacity of 20 
 
-        System.out.println("=== LRU Cache Test (Capacity: 20) ===\n");
+        System.out.println("====== LRU Cache Test (Max Capacity: 20) ======\n");
 
         // Insert items 
-        System.out.println("Operation: PUT(1, 102345)");
+        System.out.println("Task 1: PUT(1, 102345)");
         lruCache.put(1, 102345);
-        System.out.println("Operation: PUT(2, 102342)");
+        System.out.println("Task 2: PUT(2, 102342)");
         lruCache.put(2, 102342);
-        System.out.println("Operation: PUT(3, 102303)");
+        System.out.println("Task 3: PUT(3, 102303)");
         lruCache.put(3, 102303);
         lruCache.printCache();
         System.out.println();
 
         // Access key 2 (this will make key 2 the most recently used) 
-        System.out.println("Operation: GET(2) - Accessing key 2 (moves it to MRU position)");
+        System.out.println("Task 4: GET(2) - Accessing key 2 (moves it to MRU position)");
         int value = lruCache.get(2);
         System.out.println("Returned value: " + value);
         lruCache.printCache();
         System.out.println();
 
         // Insert a new key
-        System.out.println("Operation: PUT(4, 105444) - Adding new key-value pair");
+        System.out.println("Task 5: PUT(4, 105444) - Adding new key-value pair");
         lruCache.put(4, 105444);
         lruCache.printCache();
         System.out.println();
 
         // Access key 3 
-        System.out.println("Operation: GET(3) - Accessing key 3 (moves it to MRU position)");
+        System.out.println("Task 6: GET(3) - Accessing key 3 (moves it to MRU position)");
         value = lruCache.get(3);
         System.out.println("Returned value: " + value);
         lruCache.printCache();
         System.out.println();
 
         // Insert another new key
-        System.out.println("Operation: PUT(5, 103455) - Adding new key-value pair");
+        System.out.println("Task 7: PUT(5, 103455) - Adding new key-value pair");
         lruCache.put(5, 103455);
         lruCache.printCache();
         System.out.println();
 
-        System.out.println("=== Test Complete ===");
+        System.out.println("===== Test Complete =====");
     }
 }
